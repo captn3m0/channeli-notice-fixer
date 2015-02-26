@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Channel-I Notices Redirect Fix",
+  "version": "0.0.1",
+  "description": "Redirects the invalid PDF links in Channel-I notices to the correct ones",
+  "icons": {
+    "128": "128.png"
+  },
+  "author": { 
+    "name": "Abhay Rana",
+    "url": "https://captnemo.in/" 
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://people.iitr.ernet.in/Notices/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
